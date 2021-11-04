@@ -1,3 +1,4 @@
+import 'package:animation/src/discount_card.dart';
 import 'package:animation/src/flip_animation.dart';
 import 'package:flutter/material.dart';
 
@@ -18,6 +19,12 @@ class HomePage extends StatelessWidget {
             trailing: const Icon(Icons.arrow_forward_ios),
             onTap: () => Navigator.push(context,
                 MaterialPageRoute(builder: (context) => const FlipAnimation())),
+          ),
+          ListTile(
+            title: const Text('Discount card'),
+            trailing: const Icon(Icons.arrow_forward_ios),
+            onTap: () => Navigator.push(context,
+                MaterialPageRoute(builder: (context) => const DiscountCard())),
           ),
         ],
       ),
