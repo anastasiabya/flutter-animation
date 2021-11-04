@@ -1,3 +1,4 @@
+import 'package:animation/src/curved_animation.dart' as ca;
 import 'package:animation/src/discount_card.dart';
 import 'package:animation/src/flip_animation.dart';
 import 'package:flutter/material.dart';
@@ -25,6 +26,14 @@ class HomePage extends StatelessWidget {
             trailing: const Icon(Icons.arrow_forward_ios),
             onTap: () => Navigator.push(context,
                 MaterialPageRoute(builder: (context) => const DiscountCard())),
+          ),
+          ListTile(
+            title: const Text('Curved Animation'),
+            trailing: const Icon(Icons.arrow_forward_ios),
+            onTap: () => Navigator.push(
+                context,
+                MaterialPageRoute(
+                    builder: (context) => const ca.CurvedAnimation())),
           ),
         ],
       ),
